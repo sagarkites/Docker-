@@ -1,0 +1,28 @@
+version: '2'
+services:
+  flask-app1:
+     build: ./flaskapp
+     tty: true
+     networks:
+      - network 
+     ports:
+      - "5000:5000"
+  flask-app2:
+     build: ./flaskapp
+     tty: true
+     networks:
+      - network
+     ports:
+      - "5000:5000"
+
+  loadbalencer:
+      build: ./nginx
+      image: nginx
+      tty: true
+      ports:
+       - "80:80"
+      networks:
+       - network
+networks:
+     network: # This identifies that it is using default network interface
+
