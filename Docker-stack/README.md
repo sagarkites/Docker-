@@ -1,2 +1,3 @@
-# Docker Stack Deploy in Centos 7
-* sudo docker stack deploy --compose-file docker-compose.yml nameofstack*
+# Docker Stack Deploy (Manager & Worker Nodes) in Centos 7
+* Deploy - sudo docker stack deploy --compose-file compose-file nameofstack
+* Response - sudo docker stack ls 
