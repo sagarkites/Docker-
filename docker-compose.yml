@@ -1,0 +1,9 @@
+version: '3'
+services:
+   webserver:
+     image: nginx
+     build: ./webserver
+     tty: true
+     ports:
+     - "82:80"
+
