@@ -1,5 +1,5 @@
 # Dockerfile directives
-* FROM       Base image
+* **FROM**       Base image
 * MAINTAINER Mail of owner
 * RUN        Commands to be executed as a part of building image as Layers
 * USER       Create Image as non-privileged user & all RUN layer above user or else you will get privileges issues
