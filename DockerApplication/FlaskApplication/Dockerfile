@@ -1,6 +1,6 @@
 # Dockerization of simple Flask Application in Ubuntu Linux machine
 # Base Image
-From ubuntu:latest
+FROM ubuntu:latest
 # Layers
 RUN apt-get update -y
 RUN apt-get install -y python-pip && apt-get install -y python-dev
