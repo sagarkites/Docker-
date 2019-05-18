@@ -9,6 +9,6 @@
 * Check Response of Nodes - **docker node ls**
 * Make worker Node as Manager && Manager as worker - **docker node promote node id or name && docker node demote node id or name**
 * Remove Node && Swarm permenently - **docker rm -rf node id or name && docker swarm leave**
-* Deploy all worker & manager Nodes - **docker stack deploy --compose-file docker-compose.yml nameofstack**
+* Deploy Stack - **docker stack deploy --compose-file docker-compose.yml nameofstack**
 * Ckeck Response - **docker stack ls**
 
