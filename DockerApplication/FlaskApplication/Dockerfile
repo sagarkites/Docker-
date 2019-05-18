@@ -1,11 +1,9 @@
-# Dockerization of simple flask Application in Ubuntu linux machine
+# Dockerization of simple Flask Application in Ubuntu Linux machine
 # Base Image
 From ubuntu:latest
 # Layers
 RUN apt-get update -y
-
 RUN apt-get install -y python-pip && apt-get install -y python-dev
-
 RUN apt-get install -y build-essential && pip install --user flask
 # Copy from host to the image 
 COPY . /app
