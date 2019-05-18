@@ -1,1 +1,1 @@
-# Dockerfile with directives
+# Dockerfile Notes 
