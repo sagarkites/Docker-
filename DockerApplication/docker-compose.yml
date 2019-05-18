@@ -1,28 +1,30 @@
+# Compose-file for the Flask Application & Loadbalencer with Nginx
 version: '2'
 services:
   flask-app1:
      build: ./flaskapp
      tty: true
-     networks:
+     networks: # Network
       - network 
-     ports:
+     ports: # Ports
       - "5000:5000"
   flask-app2:
      build: ./flaskapp
      tty: true
-     networks:
+     networks:  # Network
       - network
-     ports:
+     ports: # Ports
       - "5000:5000"
 
   loadbalencer:
       build: ./nginx
       image: nginx
       tty: true
-      ports:
+      ports: # Ports
        - "80:80"
-      networks:
+      networks:  # Network
        - network
 networks:
-     network: # This identifies that it is using default network interface
+     network: 
+     # This identifies that it is using default network interface
 
