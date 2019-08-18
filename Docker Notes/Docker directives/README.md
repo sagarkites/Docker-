@@ -7,7 +7,7 @@
 * **COPY**       Copies the files to the Image
 * **WORKDIR**    Change directory
 * **ENV**        Creates environment variables
-* **CMD**        Executes the when container build does not creates the Layers & can be overridden with docker exce
-* **ENTRYPOINT** Default Application cannot be overridden docker exec
+* **CMD**        Executes the when container build does not creates the Layers & can not be overridden with docker exce
+* **ENTRYPOINT** Default Application can be overridden docker exec
 * **EXPOSE**     Ports should be gets out of the container
 
