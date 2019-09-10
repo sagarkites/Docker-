@@ -4,7 +4,7 @@
 * **RUN**        Commands to be executed as a part of building image as Layers
 * **USER**       Create Image as non-privileged user & all RUN layer above user or else you will get privileges issues
 * **ADD**        Addes the files to the Images
-* **COPY**       Copies the files to the Image
+* **COPY**       Copies the files to the Image,had source and destination 
 * **WORKDIR**    Change directory
 * **ENV**        Creates environment variables
 * **CMD**        Executes the when container build does not creates the Layers & can not be overridden with docker exce
